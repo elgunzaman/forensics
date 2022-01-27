@@ -1,1 +1,23 @@
+#pslist
+vol.py -f “/path/to/file” windows.pslist
+vol.py -f “/path/to/file” windows.psscan
+vol.py -f “/path/to/file” windows.pstree
+
+#procdump
+vol.py -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles ‑‑pid <PID>
+
+#memdump
+vol.py -f “/path/to/file” -o “/path/to/dir” windows.memmap ‑‑dump ‑‑pid <PID>
+
+#dlls
+vol.py -f “/path/to/file” windows.dlllist ‑‑pid <PID>
+
+#cmdline
+vol.py -f “/path/to/file” ‑‑profile <profile> cmdline
+vol.py -f “/path/to/file” ‑‑profile <profile> cmdscan
+vol.py -f “/path/to/file” ‑‑profile <profile> consoles
+
+#netscan
+vol.py -f “/path/to/file” windows.netscan
+vol.py -f “/path/to/file” windows.netstat
 
