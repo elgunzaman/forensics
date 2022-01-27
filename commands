@@ -21,3 +21,12 @@ vol.py -f “/path/to/file” ‑‑profile <profile> consoles
 vol.py -f “/path/to/file” windows.netscan
 vol.py -f “/path/to/file” windows.netstat
 
+#ardicilliq
+1.snapshot gotur
+2.ftk imager->file->create disk image->physical->ikinci sech bir gb olan->image source verdin-> E01-> image destination vse
+3. X diskindeki malweri run ele->restart ele-> yeniden ftk imager ach->capture memory -> dest Z diski->task managerde svchost 32 bitleri end task ele
+4. volatiliy ach (memdump.mem capture memoryden chixandi)
+vol.py -f Z:\memdump.mem windows.pslist. > Z:\pslist.txt (svAh>st.exe malware processdi)
+vol.py -f Z:\memdump.mem windows.dumpfiles --pid 6100 >procdump_6100.txt ----bir shey vermir
+vol.py -f Z:\memdump.mem windows.memmap --pid 6100 --dump -o Z:\ (ustunde bstrings istifade elemek olar - adi dmp extensionlu olacaq)
+5.C diski->4n6->Zimmerman->bstrings.exe cmdde ach > bstring.exe -f Z:\pid.4124.dmp --lr ipv4(to find ip adresses other commands can be found in the github link or --lr email)
